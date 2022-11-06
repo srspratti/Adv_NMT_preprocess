@@ -111,6 +111,7 @@ class FairseqTask(object):
         """
         d = Dictionary()
         for filename in filenames:
+            print("filename: ", filename)
             Dictionary.add_file_to_dictionary(
                 filename, d, tokenizer.tokenize_line, workers
             )

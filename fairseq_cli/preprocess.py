@@ -15,6 +15,9 @@ import typing as tp
 from argparse import Namespace
 from itertools import zip_longest
 
+import sys
+sys.path.append("/u/prattisr/phase-2/all_repos/Adversarial_NMT/preprocess")
+
 from fairseq import options, tasks, utils
 from fairseq.binarizer import (
     AlignmentDatasetBinarizer,
